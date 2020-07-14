@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">r/UCI</string>
+    <string name="editTextUserName">user name</string>
+    <string name="editTextMessage">message</string>
+    <string name="buttonAdd">Add</string>
+    <string name="buttonHome">Back</string>
+    <string name="editTextTitle">title</string>
+</resources>

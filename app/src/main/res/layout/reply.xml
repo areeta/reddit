@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/common_google_signin_btn_text_dark_pressed"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="50dp">
+
+        <TextView
+            android:id="@+id/reply_key"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:textColor="@color/common_google_signin_btn_text_dark_pressed" />
+
+        <TextView
+            android:id="@+id/reply_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="message"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@android:color/black" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <ImageButton
+                android:id="@+id/reply_up_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentBottom="false"
+                android:contentDescription="up arrow"
+                android:src="@android:drawable/arrow_up_float"
+                android:onClick="upVoteReply" />
+
+            <TextView
+                android:id="@+id/reply_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="0"
+                android:layout_toRightOf="@+id/reply_up_arrow"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@android:color/darker_gray" />
+
+            <ImageButton
+                android:id="@+id/reply_down_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/reply_score"
+                android:layout_toEndOf="@+id/reply_score"
+                android:contentDescription="down arrow"
+                android:src="@android:drawable/arrow_down_float"
+                android:onClick="downVoteReply" />
+
+            <Button
+                android:id="@+id/delete_reply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:onClick="deleteReply"
+                android:text="delete"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
