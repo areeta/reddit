@@ -2,6 +2,21 @@
 
 This is an Android mobile app that mocks [reddit](https://www.reddit.com/) threads where users can add, search, and delete messages and sub-messages through a Firebase database.
 
+The following functionality is **complete**:
+
+* [X] Connect to Firebase to store all of the Message information
+* [X] Post a message to the thread
+* [X] Be able to reply to a message, and that sub-message is indented to show a hierarchy. 
+* [X] Implement two levels of messages: parent posts, and their replies
+* [X] Each message should have a score
+* [X] Ability to upvote (increase a score) and downvote (decrease a score)
+* [X] Ability to upvote (increase a score) and downvote (decrease a score)
+* [X] Flag option next to each message (every message regardless of their hierarchy) that allows a user to delete the message. If the user deletes a post, it should delete the post and all of the sub-posts. 
+
+The following **optional** features could be implemented:
+* Sort messages by score
+* Allow users to add images
+
 ## Video Walkthrough 
 
 Here's a walkthrough of implemented user stories:
